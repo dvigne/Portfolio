@@ -1,0 +1,36 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Image CSS code */
+.image {
+    position: relative;
+    background: url(stars.jpg);
+    background-size: cover;
+    background-position: 0 0;
+    height: 100vh;
+    animation: animate 75s linear infinite;
+}
+
+@keyframes animate{
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+/* Text ontop of moving image */
+h1 {
+    font-weight: 200;
+    margin: 0.4em 0;
+    font-size: 3.5em;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+}
